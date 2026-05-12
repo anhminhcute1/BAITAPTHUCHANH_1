@@ -1,0 +1,32 @@
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    background: linear-gradient(to right, rgb(139, 139, 187), rgb(101, 228, 209));
+    color: white;
+    text-align: center;  
+}
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 1em;
+    max-width: 600px;
+}
+.hero button {
+    margin-top: 30px;
+    padding: 15px 25px;
+    font-size: 1em;
+    color: white;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: var(--color-secondary);
+    transition: 0.3s ease;
+}
