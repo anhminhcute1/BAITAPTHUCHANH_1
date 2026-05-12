@@ -1,69 +1,128 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My profile</title>
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/hero.css">
-    <link rel="stylesheet" href="/css/skills.css">
-    <link rel="stylesheet" href="/css/portfolio.css">
-    <link rel="stylesheet" href="/css/contact.css">
-    <link rel="stylesheet" href="/css/footer.css"> 
-    <link rel="stylesheet" href="/css/variables.css">
-    <link rel="stylesheet" href="/css/about.css">
-
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="hero.css" />
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body>
     <header>
-        <div class = "logo">
-            <h1>Do Anh Minh</h1>
-        </div>
-            <nav>
-                <ul>
-                    <li><a href="#about">Home</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+      <div class="logo">Anh Minh</div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <container>
-            <div class="profile-pic">
-                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMQEBUSEhIVFRUXFRgVFxgYFhkVFxYZFRgYFxYZHh0aHSggGhslGxcYITEhJiorLi4vHiAzODMtNygtLi0BCgoKDg0OGhAQGjclICAtKy0tKy0tMC83LTctLS0tLTczMTgrKysuNzArKys3Ky0rLTUrKzcuLS0tLS0rKy8rLf/AABEIAOEA4QMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAABQYHBAMBAv/EAEIQAAEDAgMEBwMKBQQCAwAAAAEAAgMEEQUSIQYxQWEHEyJRcYGRFDKhI0JSYnKCkrGywRUzosLRNENT4YOjNWNz/8QAGgEBAQEBAQEBAAAAAAAAAAAAAAIDAQQFBv/EACYRAQACAQMEAgIDAQAAAAAAAAABAhEDBDEFEhMhcZFBwVGBoSL/2gAMAwEAAhEDEQA/ANlREWTUREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBfmWQMaXOIAAJJO4Aak+i/ShdtSRh9Rbf1dvIkB3wugqdZt5UTPPscDerBtmkBJdz94BvhqV64f0huYSysgykNJBjvqeAs4nfuuDZQ2AAezst9a/jmK9K7DWTFpdfs93EHgfRZ+XFsTw+pHTe7Ri9Z/6nHw6zt1XPPWMp4xHvsQ5ziPHMCfENVz2Yx9ldD1jRlcDlewm+U79/EHgf8Kmhtgvfo0NqqrDfd7PhcPdb83KqX78sd5s429azE5y0NERU8IiKPxjGYaRmeZ4b3De53Jo4/kgkFwYnjUFMPlpWM5E3cfBo7R9FnmK7Z1VWS2mb1Ee7Nftnxd83wbrzUPFhDb5pHF7jqSSdTz4lVFUzZcMQ6SYhpBC+Q97j1Y8hq4+gUTNtxXv9yKNg+wSfVzv2XJFE1vutA8BZfpViE5l9O02KH/caPuRf4QbTYoP9xp+5F/hfETEGZdMW3Fez34o3jj2CD6td+yl8N6SIXHLPE+I94+Ub56Bw9Cq+vxNA14s5oPimIMy1LD8RiqG5oZGSD6pBt4jePNdSxU4c6J3WU8jmPG6xIPqP3V02Q2zMrxT1Vmy7mv90PPcRuDu62h5aXmaqiy7IiKVCIiAiIgIiICIiAvGtpmyxvjfq17Sx3g4WP5r2RBjtGx9HUPpJt4d2TuBvuI5OFj43G9TIVp2s2XZXMGuSVo7D/7Xd7fy9Qc9fVTUb+pq2EEbnb7jvB+eOe/vWWpp59w+rsd9FI8epx+JduKVYijLuO5vid3+VaOjbCjDSda4duY5+eQaM9bl33lWdmcFdic3XSi1NGbAf8hHzfD6R8vDU2iyule2Hl3u58+p64jgRFx4xiLKWB80nusF7cXHc1o5k2Cp5EXtdtOyhj0s6Zw7DP7nfVHx3d5GbdRJUPM9S4vc7ge7gLcB9UJAX1MrqqY3c43A4C263Ibh4KQWkRhnM5fGi2gGiL9AIQuuPgQovqD5dEKICL6iD4uPEaESi40cNx/YrsRBadgNpDUMNPMfloxvO97Bpc97huPke9XFYbjdLb5Rvg79j+3ovSmo3FodHPI24voSPyKmaqizbUWPwV2IQ/y6p7h3Odn+DwQpSk2/qof9TA14+k27D6i7T4WC52u9zTEURs/tHBWtJicQ4e8x2jxztfUcwpdS6IiI6IiICIiAvGqpI5W5ZGMe3uc0OHoV7Ig/McYaAGgADQACwHgF+kRAWbdJGIGapjo2nsss9/2nDT0Zr95aSVjMFR7RUz1B+e85fAnT0aGhVVNnYxoAAG4aBfV8e8NFybAcSuSlkmqn9XSROeeLraDmb6NHj6K0JIvjbGS4nN3WAaPFxPwsoqoxiNu45vDd6lW3C+jQvs+snLj9CPcOWZw/IDxVxwrZqlpbGKBjXfSIzP8AxOuUGT0kFbUaw0jyOBLSAfBzrBSUeyOKP3iNnIvb/aHLXFRNsNqpTMKGgBdMTle8W7He0cAQNS75vjuCs1mydTD/AKiupouTpSCfLILrnp8AZIQ3+LU9z9d39xF1bsK6NYQM9XI+aR2rrOLW38ffd4k69wUhUdHdA5thE5h72yPJ/qJHwQVxvRlMRcVoN93Ydb1zryk6N6xvuVTD4mRv7FfuppKvAnCSJ5mpC4BzTplueI+YTweNCd43BaNhdeyphZNGbseLjv5g8wbg+CDK59jcUj3ZJPsvaf1hqjKltZB/OpXgDecjgPxC7VuKIMHbi0UgLXXAIseI18F+MEmsXR3vY3B7+/8AYrZsW2dpqoESwsJI94ANeOYcNVj+1GzUmHTAFzjE49iUDW3FpFx2wOFwD62CRXwqQoej8TRtkZXFzXi4IiOo85N/JdcfRky/bqXkcmBp9SSuZh3Eqxg7smJU/s/vGRocG7spPb3cMlyfC62UKFwHZinotYmkvIsXuOZ1u7uA8AFNKJnK4jAiIuOiIiAiIgIiICIiDkxiTJTzOG8RSH0aSsbwqVsVPmP0j57gB8FsWNRl1NM0bzDIB4lhAWH0EElS+KnjFy42aOF3alx5AfAK6os6IaqKV+epe8Rt3RxjtO5XNmtHe469w7rnh22MsUYZSYU5sQ3ZRI6/MkR6k99yrTs1sXT0bQS0Sy8ZHC9j9UHRo+PeVKDHKbrDH7RDnabFvWNDgRvFr71SVRouktofkq6Z8B7xd1uZaWhwHhdXmkqmTMEkbg9jhcOabgrnxbCoauMxzMD2nd3jm07weYVC2VdJhmJuoHuLope0wnvsSx3InKWHvIHcguW12K+yUcsw94DKz7bzlb6E38lB9GOCCKn9pfrLPd2Y6kMvpr9b3ieNx3L8dLjSaFltwnbf8EgHxIVk2XcDQ0xG7qIv0BBIyytaLucAN1yQPzX7WP8ASk2d9bZ7HmINaIrAlpuLutwzZrg8bALQNg6aaKgibPmD7Gwd7zWlxLGm+os22nDdwQTNdSMmjfFILse0tcORFvVUXowmdDLVULzfqnlzfJxY/wAjZh8ytAJss72Bd7RilbVM/lnM0Hgc7wWn0jv5hBoqIiAuLF8MjqoXQytu1w8weDgeBBXaiDKMDrZMHrDSVJ+Qebtd80X0bIO4Hc4cPLXSwojbjZ0V1MQ0DrWXdEefFng61vGx4KG6OMcM8BgkJ6yHTXeWbhfm09k+Sm0KrK4IiKFiIiAiIgIiICIiAiKJx/HY6WCSS7XOaLBmYXLjo0EDUa7+QKCUe6wJO4Ak+W9Zb0Rwh1a55HuwuI5FzmC/pcea4sQw2plpHYlUTkFzmiJut3hzrdmxAY21yBY3A53TYyuNBPFVSA9RKHwlw1tYgnQcQQD4XstIjDOZy21Z50gUGGQtc+SP5d93Bsb8rnE73OGrQL73Ea81fqaoZIwPY4Oa4XDmm4I5EKGdslTGrdVuaXyEg2cbsDmgAOA77Ab7gcF1xXOjDZ+eEGolc9jXMysiJIBBIOdzeG7Qb9Svxtb28boWt94ZC7wD3O/SHK34/tBBRRl8rxe3ZYD23nuA/fcFU9iKN800uLVdmZgerzGzWstYu13NDRlB4jMeN0Ft2lwgVlLJATYuF2n6Lmm7T4XGvK6pOxO0/sRNBXXjLHEMc7c25vlcfo8Q7dY+Cn5ukOgabda51uLY3kettV1TUlDi8If2ZQNA9t2yMO+3Bze/KdOSCfjeHAEEEHUEagrzqqpkTS+R7WNG9ziGj1KojujINv1NZLGO4tB/S5t19pui+PMDPUySW4ABnxJcfRBz7SbVSYg/2HDgXZ9JJNQC3c630Wd7jv3Dfrcdl8DZQ07YWm5957t2Z53nw0AA7gF0YRg8FIzJBG1g421LuZJ1Pmu9AREQEREBZbtXA7C8TZWRg9VKSXgd5/mt8/fHO/ctSUVtPgza2lfCdCRdh+i8e6fDgeRKD2gla9oc03a4BwI3EEXB9F+1RujbFnWfRTaSQk5Qd+UGz2/dd8DyV5WctIERFx0REQEREBERBXNv66WChe6IlpLmsLhva1xsSDwO4X5qC2f6PKeopYpnTSFzwHuylobY72ai9xuJvvuunbbaXU0NOwTSydhwtmDb/NA4v49zd6n9icFdh9IWTSC5cZHa9mO7WjLc92W5OmpKuvCLcs928xo1c3s0DHCKnJZlDTq5vYLrDc0Wyjz7127NbR0Iom0FZG+wLi5xbdt3PcQeyc7SAbXt5q7bUbSxYfE2VrGyOld2Q1wbnAFy4uANwBbWx3hUqqxGsxtvVxUsTY81jIRmyEWPvu3aW0aL6qkpOPYuoh+VwyutG/tAOccpB3G7QWv8S1fiqw/GAAJ8QhiadLl4jJ8C2MG/mrvs/hYpKaOAOzZG2Lt1ySXOPIXJ0WVOgOKVtQ+Z7srHFrQNCBmc1oF7gABtz3krLW1q6NJvfiFUpN57YW/BOj2FrhNUymqede17h7idSX+ZtyXJ0t1TxHT07TlbI5xd3HJkDQeV33tyCg6Wkr8Pdeklzx8Yza3m0m3m0gr0qIqzEZ45KwNjZF7rWi17kE2FydcouSdw0XnnqG38c3i8fv6aRoand24cjKihjhkIgz9U4McXMBc4kkB1ydBoe7hounZjEGYdiNi7JTzxgjNezQ4ZoyfA5m8r6qxRUzG5srGtzG7rADMe823rnxHC4qgASsvbcdzhfuIXwNt1Sulq90xOJ5zOf4/eft79TazauPX0sNfttQw2vUMff/j+V9Sy4HmpHB8agq2F8EgeBoRqHNJ4Fp1CoNNsxTMN+rzfbOYem74LhwsewYvCItI5rMLb6WkJbbycA4L7W16po7jU8dInj8vFqba+nXulriIi+k84iIgIiICIiDMdvYDQ4jDXxjsvPbA4loyvH3oz6glaBG8OAINwQCD3g6gqL2+wv2mglAF3MHWs77s1IHMtzDzUd0dYl19CxpN3RHqj4N1Z/SQPIqbKqs6IihYiIgIiIChtr8WNJSPlb7+jGfadoD5C58lMqodKNO59CHDcyVjneBDmfm8LsOS+dF+z4ZF7ZILyS3yE6lrLm5+04637rd5X3pdr3R0rIgbCV/a5tjGa34i30Vh2MqGyYfTFtrCFjDbg5gyOH4gVF9JeBuqqQOjGZ8Ts4aNS5pFngc9x52txWjNF4P0fQsdFJLI+TKGuyGwZffbvLc2tvVfOil+R9ZT/AEJAR5F7D+lqkditpGVcLWFwEzGgOad7sotnb3g8e4+Sh8Fd7Lj8sZ0bOHEcy8CUH1a4KYn2qY9NKWZ7S7MVNLUvq6JvWMeS58YF3AuN3DLvc0nUW1F1pi5sSrWwQyTP91jC89/ZF7DmdyXpW9ZraMxLkTMTmGUxbZNGksL2uG8Cx+DrEeCnsLxFlQzrI72uQbixBFtPiFXKOmkxSZ1VVOOS9msB0sPmjuaO/eTdWRzoqWL5scbfIf8AZPqV+S6jpbWl/HoRPdn+n1dvfVmO68+nWl1Vn7TyTP6ukp3SO7y0u88rdw5khdUeC4zNr2YgeBMY/TmcFOl0bc3jM4j5dtvNOOPade8NBJIAG8k2AVdwBpr8XbIz+VAA4u4dm+Xzc86cgV3wdG88pBq6wn6rcz/QvsB+FXnA8Ehoo+rhbYXuSdXOPeTx/IcF9rp/S421u+05l49xuvJGIj0kURF9d5BERAREQEREHwhZhsePYsUqaM6NdfIPs9uP/wBbj6LUFmnSM32XEKWsGg0Dv/G4X9WPI8kl2F/RAe5Fk0EREBERAXlVU7ZWOjeLtc0tcO8EWK9UQZ5s/XOwardSVBPs8pzRyHc2+gdyG4O7iAd2/TgbqB2gwSKthMcgtxa4e8x3eP3HFVLDMdqcHcKesaZKe9o5W65RyvvA+gdRwuLLSJyzmMJ/aPYOGpeZonGCa+bM33S7vLbix5gg+KqWJ7L4q2eKY2qHxFuR7XNvZrszQ7NlJ1vvvv3rUqCtjnjEkTw9jtzhu/6PI6roXXHxu7VRO1tC6oop4maucw5R3lpDgPO1vNS6IMc2c2ghhpskhLXRlwtlN3XJOnO5trZdGBYNLjE3XTXZSsNgB876rT3/AEneQ5aBW7JUU0vWyU7C8m5N3NDj3kNIDj4hTEMLWNDWNDWgWAAAAA3AAbgvHpbHS09W2rEe5/z4bW172rFPxDxw+gip2COFjWNHBot5nvPM6rpRF7GIiIgIiICL8S+6dbaHXu5qm9E9bJLRP6x7nlszmguJcbFjHWuebifNBdURQ2BbRw1j5mRB14XZXFwADrlwBbYnS7TvsUEyiIgKm9KtH1lAX21ikY/yd8mf1j0VyUXtPSddRTxgXLon2+0AS34gIOHZSr66igeTcmNoPizsO+LSpZU7otqs9EWf8crh5OAePi4q4rOWkCIi46IiICIiAvGspGTMMcjQ9jhYtIuD/wB817Igz6pwaqwmQz0JMkJN5Ij2iBzG91uDh2hxuLq2bMbXU9cAGuyS21jce1zyn548PMBSqq+0mxkVTeWL5Gcdpr29kOcNRmA3G/zhY+KuLImq6Iqh0dY/LVRSRT6zQODXE73A3Avb5wLXA+AVvVJEREBERAREQEREEZtNWdRRzycWxPt9oghvxIUH0V02TDmn6cj3+hyD9C5+lmuyUTYhvlkAtxLWds/1Bg81acCofZ6aGH6EbWnmQBmPmblB6YrViCCWU7mRuf8AhBKpvRDSFtLJKd8ktr94Y0C/4i5e3SrifV0rYG+/O8Cw35WEE+rsg8yrJs5hvstJFDxYwZubj2nn8RKCSREQF8IuvqIMy6NPkqispvouFv8Axvew/m1aCs/oPkNoZmcJQ63PMxs35tK0BRbldeBERSoREQEREBERARFwY9W9RTTS8WRuI+1azR+IgIKt0WnPU10o3OkBH3nyu/cLRFSuiai6uhMh/wByRzh9loDB8WuV1WrIREQEREBERARFAba48KGkc8EdY7sRj6x4+DRr6Digq1a7+J42yMaw0urjwJYQXer8rbdzStIVS6N8DNLSdY8fKzWe6+8N+Y08b2JJ5uKdIe0XssHVRE9fN2W21LWnQu048BzPJBBRn+JY5mGsNKN/AmM6eshvzDVpSrmwuz3sNMGuA619nycjbRng0aeNzxVjQEREBERBm22I6nGqSbcHiNpPPO6N39L2q+hUXpgjLRSzDex72+ZDXj9BV4ikDmhw3EAjwOoUWXV+kRFKhERAREQEREBUfpOrS5kNHHq+Z4JHeAcrB5vI/CrwVQNmR/EMYlqt8UGjO7iyP17b/GyqqbNAwmiFPBHC3dGxrPGwsT5nVdaIrQIiICIiAiIg+ONhcrNKBhxrEjM8XpKc2YDudroPvEZjyDQVfcegfJSzxx++6KRreHac0ga8NeKzLZvHaulg9jgoXmbO4lzmv0LtLluUWsABcutoEGhbUbSRUEWd5u83yRg6vP7NHE/vYKs7F4DLUz/xKt1e7tRMItYfNdbgAPdHnvsV67P7FSPl9rxF/Wy6ERk5mttuzW0NuDR2RzV7QEREBERAREQUzpYgzUGb6ErHeuZn9ylNmJs9FTuO8wx38Q0A/ELz6Qos+G1A7mtd+F7XfsuTo+lzYdDyzt/DI8D4WU2VVYkRFCxERAREQEREFY6Qca9lpC1ptJLeNveB893kNPEhSOwmCex0bGuFpH/KScnOAs37rbDxuqtWxe3Y6yIi8dO0OI4dkCQnze5jTyC0taRDOZERF1wREQEREBERAREQEREBERAREQEREETtZHmoakf/AESfBhKrnRhJegt9GV49bO/uVvxWPNBK3vjePVpCo3RM+9JIO6c/GONctwqvK7oiLNYiIgIiICIiCj7I/wDzdd9l3641oiItIZSIiLoIiICIiAiIgIiICIiAiIgIiICIiDyq/wCW/wCyfyWe9EX+mm//AFH6Gr6i5bh2vK9IiLNo/9k=" alt="Profile Picture">
-            </div>
-            <div class="bio">
-                <p>Hi! I'm Do Anh Minh, a passionate web developer with a love for creating beautiful and functional websites. With experience in HTML, CSS, JavaScript, and various frameworks, I enjoy bringing
-                     ideas to life through code. When I'm not coding, you can find me exploring new technologies or working on personal projects.</p>
-            </div>
-        </container>
+    <section class="hero">
+      <h1>Hi, I'm Anh Minh</h1>
+      <p>Full-Stack Developer | UI Designer | Problem Solver</p>
+      <a href="#portfolio" class="cta-button"><button>View My Work</button></a>
+    </section>
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image">
+            <img
+              class="avatar"
+              src="https://thichtrangtri.com/wp-content/uploads/2025/05/anh-con-vit-cute.jpg"
+              alt="Profile Photo"
+            />
+          </div>
+          <div class="about-content">
+            <h2>About Me</h2>
+            <p class="lead">
+              I'm a passionate developer with 3+ years of experience building
+              web applications.
+            </p>
+            <p>
+              Specialized in Frontend development with React and Vue. Also
+              experienced in Backend with Node.js and Python.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="skills" class="skills-section">
-    <div class="container">
+      <div class="container">
         <h2>My Skills</h2>
         <div class="skills-grid">
-            <div class="skill-item">
-                <span class="skill-name">HTML5</span>
-                <div class="skill-bar">
-                    <div class="skill-progress" style="width: 95%"></div>
-                </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">HTML5</span>
+              <span class="skill-percent">95%</span>
             </div>
-            <div class="skill-item">
-                <span class="skill-name">CSS3</span>
-                <div class="skill-bar">
-                    <div class="skill-progress" style="width: 90%"></div>
-                </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="95"></div>
             </div>
-            <div class="skill-item">
-                <span class="skill-name">JavaScript</span>
-                <div class="skill-bar">
-                    <div class="skill-progress" style="width: 85%"></div>
-                </div>
-            </div>    
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">CSS3</span>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="90"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">JavaScript</span>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="85"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">React</span>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="80"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Node.js</span>
+              <span class="skill-percent">75%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="75"></div>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
     </section>
-</body>
+
+    <script>
+      const skillProgressElements =
+        document.querySelectorAll(".skill-progress");
+      const skillObserver = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            const progressEl = entry.target;
+            const value = progressEl.dataset.progress || "0";
+            progressEl.classList.add("animate");
+            progressEl.style.width = `${value}%`;
+            observer.unobserve(progressEl);
+          });
+        },
+        {
+          threshold: 0.4,
+        },
+      );
+
+      skillProgressElements.forEach((el) => {
+        el.style.width = "0%";
+        skillObserver.observe(el);
+      });
+    </script>
+  </body>
 </html>
